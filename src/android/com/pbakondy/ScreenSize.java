@@ -21,7 +21,7 @@ public class ScreenSize extends CordovaPlugin {
       // http://developer.android.com/reference/android/util/DisplayMetrics.html
 
       DisplayMetrics dm = new DisplayMetrics();
-      this.cordova.getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
+      this.cordova.getActivity().getWindowManager().getDefaultDisplay().getRealMetrics(dm);
 
       int width = dm.widthPixels;
       int height = dm.heightPixels;
